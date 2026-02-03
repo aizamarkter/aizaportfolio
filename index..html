@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizAnalytics - Business Analytics Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1556740749-887f6717d7e4') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #ff9800;
+            color: white;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1a73e8;
+        }
+
+        .services, .projects {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        footer a {
+            color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>AizaBizAnalytics</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Unlock Insights, Drive Success</h1>
+        <p>Smart business analytics solutions for data-driven decision making.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="container services">
+        <div class="card">
+            <h3>Data Analysis</h3>
+            <p>Extracting insights from complex datasets.</p>
+        </div>
+        <div class="card">
+            <h3>Business Intelligence</h3>
+            <p>Interactive dashboards and reports.</p>
+             <button onclick="playVideo()" class="btn">
+        ▶ Play Video
+    </button>
+
+    <video id="demoVideo" width="100%" controls style="display:none; margin-top:15px;">
+        <source src="Aiza - Google Sheets - Personal - Microsoft​ Edge 2025-12-06 17-00-53.mp4" type="video/mp4">
+    </video>
+        </div>
+        <script>
+function playVideo() {
+    const video = document.getElementById("demoVideo");
+    video.style.display = "block";
+    video.play();
+}
+</script>
+        <div class="card">
+            <h3>Predictive Analytics</h3>
+            <p>Forecasting trends for better planning.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="container projects">
+        <div class="card">
+            <h3>Sales Analytics</h3>
+            <p>Optimizing sales strategies using data.</p>
+        </div>
+        <div class="card">
+            <h3>Customer Analysis</h3>
+            <p>Understanding customer behavior.</p>
+        </div>
+        <div class="card">
+            <h3>Market Research</h3>
+            <p>Analyzing market trends and opportunities.</p>
+        </div>
+        <div class="card">
+            <h3>PostgreSQL & Business Analytics</h3>
+            <p>
+                Presentation focused on using <strong>PostgreSQL</strong> as an
+                ORDBMS for business analytics.
+            </p>
+
+            <a href="PostgreSQL_.pdf"
+               target="_blank"
+               class="btn">
+               View Presentation
+            </a>
+        </div>
+        <div class="card">
+            <h3>Online Sales Management System</h3>
+            <p>
+                The project analyzes sales performance,
+                top-selling products, and high-value customers using RDBMS concepts and SQL.
+            </p>
+
+            <a href="Online Sales Management System Using Postgre Sql (1).pdf"
+               target="_blank"
+               class="btn">
+               View Project Report
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+    <div class="container">
+        <p><strong>Email:</strong> 
+            <a href="mailto:aizaateeqbsm2027@gmail.com">
+                aizaateeqbsm2027@gmail.com
+            </a>
+        </p>
+        <p><strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/aiza-ateeq" target="_blank">
+                linkedin.com/in/aiza-ateeq
+            </a>
+        </p>
+
+        <br><br>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2025 BizAnalytics | Designed by <strong>Aiza Ateeq</strong><br>
+        📧 <a href="mailto:aizaateeqbsm2027@gmail.com">aizaateeqbsm2027@gmail.com</a> |
+        🔗 <a href="https://www.linkedin.com/in/aiza-ateeq" target="_blank">LinkedIn Profile</a>
+    </p>
+</footer>
+
+</body>
+</html>
